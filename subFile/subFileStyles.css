@@ -1,0 +1,135 @@
+body{
+  background-image: url(../../images/background/5.png);
+}
+
+.paperContainer{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    font-size: 110%
+}
+
+.paperContainer h1{
+  color: whitesmoke;
+  margin-left: 0.7%;
+  margin-top: 0.7%;
+  padding-top: 10px;
+}
+
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 135.5%;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.g12PaperLink p{
+    padding-bottom: 0.7%;
+    font-size: 130%;
+}
+
+.fileTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fileTable td, .fileTable th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.fileTable tr:nth-child(even){background-color: #dad9d9;}
+.fileTable tr:nth-child(odd){background-color: #f5f5f5;}
+
+.fileTable tr:hover {background-color: #edebeb;}
+
+.fileTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-color: #b9e3ffb0;
+  text-align: left;
+  /* background-color: #000f55; */
+  background-color: #004776;
+  color: white;
+  font-size: 108%;
+  text-align: center;
+}
+
+#termSpan{
+  background: linear-gradient(217deg, rgba(0, 200, 255, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0, 166, 255, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(8, 0, 255, 0.8), rgba(0,0,255,0) 70.71%);
+  color: #004776;
+}
+
+/* #headRow{
+  background: linear-gradient(217deg, rgba(0, 200, 255, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0, 166, 255, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(8, 0, 255, 0.8), rgba(0,0,255,0) 70.71%);
+} */
+@media screen and (max-width:3840px) {
+  .paperContainer h1{
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width:1920px) {
+  .paperContainer h1{
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width:1280px) {
+  .paperContainer h1{
+    margin-top: 1%;
+  }
+}
+@media screen and (max-width:850px) {
+  .paperContainer h1{
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width:800px) {
+  .paperContainer h1{
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width:620px) {
+  .paperContainer h1{
+    margin-top: 2.7%;
+  }
+}
+@media screen and (max-width:500px) {
+  .paperContainer h1{
+    margin-top: 5.7%;
+  }
+}
+@media screen and (max-width:390px) {
+  .paperContainer h1{
+    margin-top: 6%;
+  }
+}
+@media screen and (max-width:360px) {
+  .paperContainer h1{
+    margin-top: 5.7%;
+  }
+}
+@media screen and (max-width:340px) {
+  .paperContainer h1{
+    margin-top: 11.7%;
+  }
+}
+@media screen and (max-width:320px) {
+  .paperContainer h1{
+    margin-top: 13.7%;
+  }
+}@media screen and (max-width:300px) {
+  .paperContainer h1{
+    margin-top: 15.7%;
+  }
+}

@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Patrick Hand", cursive;
+  width: auto;
+}
+body{
+  background-image: url(../images/background/7.png)
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Responsive Navigation Bar Begins */
+nav{
+  position: fixed;
+  display: flex;
+  height: 10.6%;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+nav .logo img{
+    width: 10vh;
+    height: auto;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+  margin-top: -1.1%;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 113%;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* nav ul li a.active, */
+nav ul li a:hover{
+  font-size: 116%;
+  /* color: #1b1b1b;
+  background: whitesmoke;
+  box-shadow: 0 0 2px whitesmoke,
+              0 0 2px whitesmoke,
+              0 0 2px whitesmoke,
+              0 0 2px whitesmoke;
+  padding-top: -50px;
+  padding-bottom: -50px;
+  border-radius: 20px; */
+}
+
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #1b1b1b;
+    height: 100vh;
+    width: 70%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: whitesmoke;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  /* nav ul li a.active, */
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  .container h1{
+    padding-top: 6%;
+    /* font-size: 126%; */
+  }
+}
+
+/* Responsive Navigation Bar Ends */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* .container{
+  top: 50%;
+  height: 100vh;
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+} */
+.container1{
+  height: 100vh;
+}
+.container, .container1{
+  /* height: 100vh; */
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  color: #1b1b1b;
+  font-weight: 500;
+  font-size: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container h1{
+  padding-top: 5.5%;
+}
+#school_cont{
+  margin-top: 0%;
+}
+@media screen and (max-width:1240px) {
+  .container{
+    padding-top: 7%;
+  }
+}
+@media screen and (max-width:1060px) {
+  .container{
+    padding-top: 8%;
+  }
+}
+@media screen and (max-width:720px) {
+  .container{
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width:600px) {
+  .container{
+    padding-top: 12%;
+  }
+}
+@media screen and (max-width:490px) {
+  .container{
+    padding-top: 14%;
+  }
+}
+@media screen and (max-width:420px) {
+  .container{
+    padding-top: 16%;
+  }
+}
+@media screen and (max-width:380px) {
+  .container{
+    padding-top: 21%;
+  }
+}
+@media screen and (max-width:380px) {
+  .container{
+    padding-top: 18%;
+  }
+}
+
+#index_image{
+  background-image: url(../images/index_bg_image2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.navUnderlined{
+  position: relative;
+  margin-right: 1rem;
+}
+.navUnderlined:hover::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 2.6px #04d3f7;
+  border-color: #04d3f7 transparent transparent transparent;
+  border-radius: 30%;
+}
+
+.underlined{
+  position: relative;
+  margin-right: 1rem;
+}
+.underlinedHr{
+  position: relative;
+  margin-right: 1rem;
+  margin-bottom: 0%;
+}
+.underlined:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 3px #cb1829;
+  border-color: #cb1829 transparent transparent transparent;
+  border-radius: 30%;
+}
+.underlinedHr::after{
+  content: "";
+  z-index: -2;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 3px #000f55;
+  border-color: #000f55 transparent transparent transparent;
+  border-radius: 30%;  
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card, .scl {
+  margin: 30px auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 2.5px 2.5px 15px 3.5px rgba(0,0,0,0.184), -2.5px -2.5px 15px 3.5px rgba(0,0,0,0.184);
+  cursor: pointer;
+  transition: 0.4s;
+}
+@media screen and (max-width:620px) {
+  .card, .scl{
+    width: 250px;
+    height: 250px;
+  }
+  body{
+    font-size: 90%;
+  }
+  .scl #sirimawo_card_title{
+    margin-top: -44%;
+  }
+}
+@media screen and (max-width:364px) {
+  body{
+    font-size: 80%;
+  }
+}
+@media screen and (max-width:324px) {
+  body{
+    font-size: 73%;
+  }
+}
+@media screen and (max-width:298px) {
+  body{
+    font-size: 69%;
+  }
+}
+
+.card .card_image, .scl .card_image{
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img, .scl .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title{
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 160%;
+  /* margin-top: -124px; */
+  margin-top: -46%;
+  height: 40px;
+  text-shadow: -1px 1px 2px #0f0f0f,
+				  1px 1px 2px #0f0f0f,
+				  1px -1px 0 #0f0f0f,
+				  -1px -1px 0 #0f0f0f;
+}
+.scl .scl_card_title{
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 160%;
+  /* margin-top: -124px; */
+  margin-top: -30%;
+  height: 40px;
+  text-shadow: -1px 1px 2px #0f0f0f,
+				  1px 1px 2px #0f0f0f,
+				  1px -1px 0 #0f0f0f,
+				  -1px -1px 0 #0f0f0f;
+}
+/* .card .card_title p, .card .scl_card_title p{
+  background-color: #cb1829;
+} */
+
+.card:hover, .scl:hover, .ytSubLessonName:hover{
+  transform: scale(1.05, 1.05);
+  box-shadow: 2.5px 2.5px 15px 7.5px rgba(0, 0, 0, 0.184), 
+    -2.5px -2.5px 15px 7.5px rgba(0,0,0,0.184);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+/* @media all and (max-width: 500px) {
+  .card-list {
+    On small screens, we are no longer using row direction but column
+    flex-direction: column;
+  }
+} */
+@media all and (max-width: 500px) {
+  .card, .scl{
+    width: 225px;
+    height: 225px;
+  }
+  body{
+    font-size: 85%;
+  }
+  .scl #sirimawo_card_title{
+    margin-top: -46%;
+  }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.ytSubName{
+  text-align: center;
+  margin-left: 1.6%;
+  margin-right: 1.6%;
+  margin-top: 1.9%;
+  padding-bottom: 0.6%;
+  font-size: 170%;
+  margin-bottom: 1%;
+  border: 1px solid #0f0f0f;
+  border-radius: 20px;
+  background-color: #0f0f0f;
+  color: #e6e6e6;
+	text-shadow: 0.4px 0.4px 0 #e6e6e6;
+}
+
+.ytSubLessonName{
+  font-size: 120%;
+  width: 440px;
+  padding: 7%;
+  border: 1px solid #181818;
+  border-radius: 14px;
+  color: #e6e6e6;
+  background-color: #181818;
+}
+
+@media screen and (max-width:900px){
+  .ytSubLessonName{
+    width: 380px;
+  }  
+}
+
+.ytSubLessonName:hover{
+  transition: 0.4s;
+}
+.ytSubLessonName:not(:hover){
+  transform: scale(1, 1);
+  box-shadow: 2.5px 2.5px 15px 3.5px rgba(0,0,0,0.184), -2.5px -2.5px 15px 3.5px rgba(0,0,0,0.184);
+  transition: 0.4s;
+}
+
+.ytSubLessonName label{
+  background-color: #ff0000;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+iframe{
+  width: 620px;
+  height: 220%;
+}
+.ytpl{
+  /* padding-bottom: 10%; */
+  margin-bottom: 1.6%;
+  cursor: pointer;
+}
+.ytSubLessonName label{
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  iframe{
+    width: 600px;
+    height: 210%;
+  } 
+}
+@media screen and (max-width: 1260px) {
+  iframe{
+    width: 560px;
+    height: 200%;
+  } 
+}
+@media screen and (max-width: 1200px){
+  .card, .scl{
+    margin: 20px auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  iframe{
+    width: 520px;
+    height: 190%;
+  } 
+}
+@media screen and (max-width: 1100px) {
+  iframe{
+    width: 500px;
+    height: 180%;
+  } 
+}
+@media screen and (max-width: 1020px) {
+  iframe{
+    width: 450px;
+    height: 170%;
+  } 
+}
+@media screen and (max-width: 995px){
+  .card, .scl{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 940px) {
+  iframe{
+    width: 400px;
+    height: 160%;
+  } 
+}
+@media screen and (max-width: 995px){
+  .card, .scl{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 890px){
+  .card, .scl{
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 830px) {
+  iframe{
+    width: 600px;
+    height: 300px;
+    margin-bottom: 0.5%;
+  }
+  .ytpl{
+    margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .card .card_title, .scl .scl_card_title{
+    font-size: 134%;
+  }
+  .card, .scl{
+    width: 230px;
+    height: 230px;
+  }
+  iframe{
+    width: 600px;
+    height: 330px;
+  }
+  .ytSubLessonName{
+    width: 320px;
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 680px) {
+  iframe{
+    width: 580px;
+    height: 320px;
+  }
+  .ytSubLessonName{
+    width: 290px;
+    font-size: 100%;
+  }
+  .ytpl{
+    margin-bottom: 0%;
+  }
+}
+@media screen and (max-width: 610px) {
+  iframe{
+    width: 550px;
+    height: 300px;
+  } 
+}
+@media screen and (max-width: 580px) {
+  iframe{
+    width: 500px;
+    height: 300px;
+  }
+  .ytSubLessonName{
+    width: 260px;
+  }
+  .ytpl{
+    margin-bottom: -1.5%;
+  }
+}
+@media screen and (max-width: 520px){
+  .ytSubLessonName{
+    width: 400px;
+    padding: 5%;
+  }
+  .ytSubName{
+    font-size: 155%;
+  }
+}
+@media screen and (max-width: 530px) {
+  iframe{
+    width: 450px;
+    height: 300px;
+  } 
+}
+@media screen and (max-width: 460px) {
+  iframe{
+    width: 400px;
+    height: 240px;
+  }
+  .card, .scl{
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 420px){
+  .ytSubLessonName{
+    width: 355px;
+    padding: 5%;
+  }
+  .ytpl{
+    margin-bottom: -2%;
+  }
+}
+@media screen and (max-width: 410px) {
+  iframe{
+    width: 350px;
+    height: 220px;
+  } 
+}
+@media screen and (max-width: 400px) {
+  .card, .scl{
+    /* width: 250px; */
+    /* height: 250px; */
+    width: 160px;
+    height: 160px;
+    margin: 10px auto;
+  }
+  .card .card_title, .scl .scl_card_title{
+    font-size: 120%;
+    margin-top: -50%;
+  }
+}
+@media screen and (max-width: 360px) {
+  iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .ytSubLessonName{
+    width: 318px;
+  }
+  .ytpl{
+    margin-bottom: -3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .ytSubLessonName{
+    width: 304px;
+  }
+}
+@media screen and (max-width: 310px) {
+  iframe{
+    width: 260px;
+    height: 180px;
+  } 
+}
+
+.ytShortDesc{
+  display:block;
+  font-weight: 400;
+}
+
+.playlistText{
+  background-color: #ff0000;
+  border: 1px solid #272727;
+  color: #e6e6e6;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.3%;
+  cursor: pointer;
+}
+
+/* #phyMechanics{
+  background-image: url(../images/subBg/ytMechanicsPractical.png);
+  background-position: right;
+}
+#phyWaves{
+  background-image: url(../images/subBg/ytlogoshreded.png);
+  background-position: right;
+} */

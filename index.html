@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Navigation Menu</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+   <!-- Responsive Navigation Bar Begins -->
+      <div class="container1" id="index_image">
+      <nav>
+         <div class="logo">
+            <img src="../images/logo1.png" alt="AK Edu">
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="./index.html"><span class="navUnderlined">Home</span></a></li>
+            <li><a href="#subject_cont"><span class="navUnderlined">Subject</span></a></li>
+            <li><a href="#school_cont"><span class="navUnderlined">School</span></a></li>
+            <li><a href="#ytlearn_cont"><span class="navUnderlined">YouTube-Learning</span></a></li>
+            <li><a href="#"><span class="navUnderlined">About</span></a></li>
+         </ul>
+      </nav>
+      </div>
+
+   <!-- Responsive Navigation Bar Ends -->
+   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+<!-- Subject Selector Div -->
+      <div class="container" id="subject_cont">
+         <h1><label><span class="underlined">Select your prefered subject</span></label></h1>
+         <div class="cards-list">
+            <!--
+            <div class="card 1">
+               <div class="card_image">
+                  <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+               </div>
+               <div class="card_title title-white">
+                  <p>Combined Maths<br>සංයුක්ත ගණිතය</p>
+               </div>
+            </div>
+            -->
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/maths.html','_blank');">
+                  <img src="../images/math.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>Combined Maths<br>සංයුක්ත ගණිතය</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/physics.html','_blank');">
+                  <img src="../images/physics.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>Physics<br>භෞතික විද්‍යාව</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/ict.html','_blank');">
+                  <img src="../images/ict.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>ICT<br>තොරතුරු තාක්ෂණය</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/chem.html','_blank');">
+                  <img src="../images/chemistry.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>Chemistry<br>රසායන විද්‍යාව</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/bio.html','_blank');">
+                  <img src="../images/bio.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>Biology<br>ජීව විද්‍යාව</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/et.html','_blank');">
+                  <img src="../images/et.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>ET<br>ඉංජිනේරු තාක්ෂණවේදය</p>
+               </div>
+            </div>
+
+            <div class="card 1">
+               <div class="card_image" onclick="window.open('./subFile/sft.html','_blank');">
+                  <img src="../images/sft.png" />
+               </div>
+               <div class="card_title title-white">
+                  <p>SFT<br>තාක්ෂණවේදය සඳහා විද්‍යාව</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+<!-- School Selector Div -->
+      <div class="container" id="school_cont">
+         <h1 id="scl"><label> <div class="underlinedHr"></div> <span class="underlined">Select School</span></label></h1>
+         <div class="cards-list">
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/anandaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Ananda College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/bandaranayakeCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Bandaranayake College (Gampaha)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/dssenanayakeCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>D.S. Senanayake (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/devibalikaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Devi Balika Vidyalaya (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/dharmarajaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Dharmaraja College (Kandy)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/isipathanaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Isipathana College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/mahanamaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Mahanama College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/maliyadevagirlsCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Maliyadeva Girls' (Kurunegala)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/nalandaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Nalanda College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/rahulaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Rahula College (Matara)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/rathnavaliCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Rathnawali Balika Vidyalaya (Gampaha)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/royalCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Royal College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/sanghamittaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Sanghamitta Balika (Galle)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/sirimawoCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white" id="sirimawo_card_title">
+                  <p>Sirimawo Bandaranayake (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/sivaliCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Sivali College (Rathnapura)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/thakshilaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Thakshila College (Horana)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/thurstanCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Thurstan College (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/vishakaCrestBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Vishaka Vidyalaya (Colombo)</p>
+               </div>
+            </div>
+
+            <div class="scl 1">
+               <div class="card_image">
+                  <img src="../images/crest/otherPaperBl.png" />
+               </div>
+               <div class="scl_card_title title-white">
+                  <p>Other</p>
+               </div>
+            </div>   
+         </div>
+         
+      </div>
+
+<!-- School Selector Div -->
+      <div class="container" id="ytlearn_cont">
+         <h1 id="ytlearn"><label> <div class="underlinedHr"></div> <span class="underlined">Video lessons from YouTube</span></label></h1>
+         <div class="ytSubName"><label>- Physics Practicals -</label><br><label style="font-size:90%;">භෞතික විද්‍යාව ප්‍රයෝගික පරීක්ෂණ</label></div><br>
+         <div class="cards-list">
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyMechanicsPracticals.html';"><label>Mechanics</label><br><label style="font-size:90%;">යාන්ත්‍ර විද්‍යාව</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyOscillationsPracticals.html';"><label>Oscillations and Waves</label><br><label style="font-size:90%;">දෝලන හා තරංග</label></div><br>
+            </div>
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyThermalPracticals.html';"><label>Thermal Physics</label><br><label style="font-size:90%;">තාප භෞතිකය</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyGravitationalPracticals.html';"><label>Gravitational Field</label><br><label style="font-size:90%;">ගුරුත්වාකර්ෂණ ක්ෂේත්‍ර</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyEelectrostaticPracticals.html';"><label>Eelectrostatic Field</label><br><label style="font-size:90%;">ස්ථිති විද්‍යුත් ක්ෂේත්‍රය</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyMagneticPracticals.html';"><label>Magnetic Field</label><br><label style="font-size:90%;">චුම්බක ක්ෂේත්‍රය</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyCurrentPracticals.html';"><label>Current Electricity</label><br><label style="font-size:90%;">ධාරා විද්‍යුතය</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyElectronicsPracticals.html';"><label>Electronics</label><br><label style="font-size:90%;">ඉලෙක්ට්‍රොනික විද්‍යාව</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyMechanicalPracticals.html';"><label>Mechanical Properties of Matter</label><br><label style="font-size:90%;">පදාර්ථයේ යාන්ත්‍රික ගුණ</label></div><br>
+            </div>
+
+            <div class="ytpl 1">
+               <div class="ytSubLessonName" onclick="location.href='./ytSubFile/phyMatterPracticals.html';"><label>Matter and Radiation</label><br><label style="font-size:90%;">පදාර්ථ හා විකිරණ</label></div><br>
+            </div>
+         </div>
+         <br>
+
+         <!--
+         <div class="cards-list">
+            <div class="ytpl 1">
+               <iframe src="https://youtube.com/playlist?list=PLfQOdndp7WqpYqUPsb46KqaeV7HGSdIvq&si=ZKBEwJgl6HXjTTTW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <label for="ytShortDesc" class="ytShortDesc"><label class="playlistText" onclick="window.open('https://youtube.com/playlist?list=PLfQOdndp7WqpYqUPsb46KqaeV7HGSdIvq&si=ZKBEwJgl6HXjTTTW','_blank');">Playlist</label> - Revision සඳහා Theory - Mahen Jacob</label>
+            </div>
+
+            <div class="ytpl 1">
+               <iframe src="https://youtube.com/playlist?list=PL4fcxYS0MDhwtRS7zbMTPox6bG5W6wys3&si=6cSTzwzpqLtTnYxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <label for="ytShortDesc" class="ytShortDesc"><label class="playlistText" onclick="window.open('https://youtube.com/playlist?list=PL4fcxYS0MDhwtRS7zbMTPox6bG5W6wys3&si=6cSTzwzpqLtTnYxK','_blank');">Playlist</label> - ආලෝකය සිද්ධාන්ත - Lophex</label>
+            </div>
+         </div> -->
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+</html>
