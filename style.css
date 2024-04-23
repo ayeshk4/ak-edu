@@ -9,7 +9,7 @@
   width: auto;
 }
 body{
-  background-image: url(../images/background/7.png)
+  background-image: url(./images/background/7.png)
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -210,7 +210,7 @@ input[type="checkbox"]{
 }
 
 #index_image{
-  background-image: url(../images/index_bg_image2.png);
+  background-image: url(./images/index_bg_image2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -673,10 +673,10 @@ iframe{
 }
 
 /* #phyMechanics{
-  background-image: url(../images/subBg/ytMechanicsPractical.png);
+  background-image: url(./images/subBg/ytMechanicsPractical.png);
   background-position: right;
 }
 #phyWaves{
-  background-image: url(../images/subBg/ytlogoshreded.png);
+  background-image: url(./images/subBg/ytlogoshreded.png);
   background-position: right;
 } */
