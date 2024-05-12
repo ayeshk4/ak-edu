@@ -134,6 +134,459 @@ input[type="checkbox"]{
 /* Responsive Navigation Bar Ends */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* Welcome Message */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.text-with-bg {
+  background-color: hsla(217, 100%, 0%, 0.84); /* Background color */
+  width: 46%;
+  font-size: 210%;
+  text-align: center;
+  color: #333; /* Text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute; /* Positioning */
+  top: 8%; /* Distance from the top */
+  right: 0px;
+  height: 91.6vh;
+
+  padding-top: 4%;
+  color: hsla(360, 100%, 100%, 0.80);
+    
+  -webkit-box-shadow:0px 0px 62px 13px hsla(217, 100%, 0%, 0.96);
+  -moz-box-shadow: 0px 0px 62px 13px hsla(217, 100%, 0%, 0.96);
+  box-shadow: 0px 0px 62px 13px hsla(217, 100%, 0%, 0.96);
+}
+/*left: 200px;*/
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+--text-color: hsla(210, 50%, 85%, 1);
+--shadow-color: hsla(210, 40%, 52%, .4);
+--btn-color: hsl(210, 80%, 42%);
+--bg-color: #141218;
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+button {
+position:relative;
+padding: 10px 20px;
+border: none;
+background: none;
+cursor: pointer;
+
+/* font-family: "Source Code Pro"; */
+font-weight: 600;
+text-transform: uppercase;
+font-size: 96%;
+color: var(--text-color);
+
+background-color: var(--btn-color);
+box-shadow: var(--shadow-color) 2px 2px 22px;
+border-radius: 4px; 
+z-index: 0;  
+overflow: hidden;   
+}
+
+button:focus {
+outline-color: transparent;
+box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+content: var(--content);
+display: block;
+position: absolute;
+white-space: nowrap;
+padding: 40px 40px;
+pointer-events:none;
+}
+
+button::after{
+/* font-weight: 200; */
+font-size: 100%;
+top: -30px;
+left: -20px;
+} 
+
+.right, .left {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+}
+.right {
+left: 66%;
+}
+.left {
+right: 66%;
+}
+.right::after {
+top: -30px;
+left: calc(-66% - 20px);
+
+background-color: var(--bg-color);
+color:transparent;
+transition: transform .4s ease-out;
+transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+content: '';
+pointer-events: none;
+opacity: .6;
+background:
+  radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+  radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+  radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+width: 100%;
+height: 300%;
+top: 0;
+left: 0;
+position: absolute;
+animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+from {
+  transform: translate();
+}
+to {
+  transform: translate(0, -66.666%);
+}
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.scroll-down-icon {
+position: relative;
+width: 24px;
+height: 24px;
+left: 50%;
+top: -5%;
+}
+
+.chevron {
+position: absolute;
+width: 28px;
+height: 8px;
+opacity: 0;
+transform: scale3d(0.5, 0.5, 0.5);
+animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+content: ' ';
+position: absolute;
+top: 0;
+height: 100%;
+width: 51%;
+background: #fff;
+}
+
+.chevron:before {
+left: 0;
+transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+right: 0;
+width: 50%;
+transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+25% {
+  opacity: 1;
+
+}
+33% {
+  opacity: 1;
+  transform: translateY(30px);
+}
+67% {
+  opacity: 1;
+  transform: translateY(40px);
+}
+100% {
+  opacity: 0;
+  transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+}
+}
+
+.text {
+display: block;
+margin-top: 75px;
+margin-left: -30px;
+font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+font-size: 12px;
+color: #fff;
+text-transform: uppercase;
+white-space: nowrap;
+opacity: .25;
+animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+to {
+  opacity: 1;
+}
+}
+
+@media screen and (max-width:1146px) {
+  .text-with-bg{
+    font-size: 204%;
+  }
+  button{
+    font-size: 95.7%;
+  }
+}
+@media screen and (max-width:1030px) {
+  #index_image{
+    background-position: left -240px top !important;
+  }
+}
+@media screen and (max-width:1019px) {
+  .text-with-bg{
+    font-size: 198.5%;
+  }
+  button{
+    font-size: 92.6%;
+  }
+}
+@media screen and (max-width:888px) {
+  .text-with-bg{
+    font-size: 190.5%;
+  }
+  button{
+    font-size: 88%;
+  }
+  .scroll-down-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:854px) {
+  .text-with-bg{
+    font-size: 184%;
+  }
+  button{
+    font-size: 84%;
+  }
+  .scroll-down-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:776px) {
+  .text-with-bg{
+    font-size: 174%;
+  }
+  button{
+    font-size: 82%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+  #index_image{
+    background-position: left -280px top !important;
+  }
+}
+@media screen and (max-width:736px) {
+  .text-with-bg{
+    font-size: 166%;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:641px) {
+  .text-with-bg{
+    font-size: 158%;
+  }
+  button{
+    font-size: 76%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:620px) {
+  .text-with-bg{
+    font-size: 170%;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:560px) {
+  #index_image{
+    background-position: left -300px top !important;
+  }
+}
+@media screen and (max-width:542px) {
+  .text-with-bg{
+    font-size: 166%;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:470px) {
+  #index_image{
+    background-position: left -260px top !important;
+  }
+}
+@media screen and (max-width:426px) {
+  .text-with-bg{
+    top: 10%;
+    font-size: 160%;
+    height: 89.6vh;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:406px) {
+  .text-with-bg{
+    font-size: 155%;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:362px) {
+  .text-with-bg{
+    font-size: 148%;
+  }
+  button{
+    font-size: 80%;
+  }
+  .scroll-down-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:348px) {
+  .text-with-bg{
+    font-size: 142%;
+  }
+  button{
+    font-size: 77%;
+  }
+  .scroll-down-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:326px) {
+  .text-with-bg{
+    font-size: 138%;
+  }
+  button{
+    font-size: 75%;
+  }
+  .scroll-down-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .text{
+    font-size: 10px;
+  }
+}
+
+/* Welcome Message Ends */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 /* .container{
   top: 50%;
   height: 100vh;
@@ -210,7 +663,7 @@ input[type="checkbox"]{
 }
 
 #index_image{
-  background-image: url(./images/index_bg_image2.png);
+  background-image: url(./images/index_bg_image5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
