@@ -8,6 +8,10 @@
   font-family: "Patrick Hand", cursive;
   width: auto;
 }
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
 body{
   background-image: url(./images/background/7.png)
 }
