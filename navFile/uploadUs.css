@@ -1,0 +1,391 @@
+/* #upload_cont{
+  height: 100vh;
+  margin-top: 90%;
+} */
+
+svg {
+	height: 100%;
+	margin-right: 2rem;
+  margin-left: 1%;
+  margin-top: 2.4%;
+}
+
+#envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+#star1, #star2, #star3, #star4, #star5, #star6 {
+  animation: blink 1s ease-in-out infinite;
+}
+#star2 { animation-delay: 100ms; }
+#star3 { animation-delay: 500ms; }
+#star4 { animation-delay: 700ms; }
+#star5 { animation-delay: 300ms; }
+#star6 { animation-delay: 200ms }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerUp{
+  height: 100vh;
+}
+
+.uploadLeftHalf{
+  float: left;
+  width: 47.2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.uploadRightHalf{
+  float: right;
+  width: 47.2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+
+/* form {
+	min-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 1%;
+    margin-bottom: 16%;
+	
+	.title {
+		font-family: 'Pacifico', cursive;
+		color: #212529;
+		font-size: 120%;
+    font-weight: 550;
+	}
+	
+  .form-control {
+    background-color: #f2f6f8;
+		border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		
+    &.thick {
+      height: 3.3rem;
+      padding: .5rem 3.5rem;
+    }
+		
+		&:focus {
+			background-color: #f2f6f8;
+			border: none;
+			box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		}
+  }
+	
+	.message .form-control {
+			padding: .5rem 1.8rem;
+	}
+	
+  ::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #676c6d;
+    position: relative;
+    left: 0;
+  }
+	
+  input,
+  textarea {
+	font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+    min-width: 44rem;
+  }
+	
+  .icon {
+    color: #57565c;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+  }
+} */
+
+.uploadMsg{
+  width: 100%;
+  font-size: 105%;
+  font-weight: 500;
+}
+
+form div{
+  margin-bottom: 2%;
+}
+
+.btn.btn-primary {
+    /* font-family: 'Quicksand', sans-serif; */
+    color: #3d3d3dbf;
+    font-weight: bold;
+    /* height: 130%; */
+    /* line-height: 2.5rem; */
+    /* padding: 0 3rem; */
+    border: 0;
+    border-radius: 3rem;
+    background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+    /* min-width: 85%; */
+    font-size: 106%;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.contactUs-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contact-inputs{
+  width: 100%;
+  height: 2.8rem;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  color: #0b0b0bbf;
+  border-radius: 50px;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+.contact-inputs::placeholder{
+  font-size: 20px;
+  color: #6a6a6a;
+}
+
+.contactUs-form textarea{
+  height: 140px;
+  padding-top: 1rem;
+  border-radius: 24px;
+}
+
+.contact-inputs:focus{
+  border: 1.6px solid #ff923c;
+}
+
+.contactUs-form button{
+  padding: 15px 30px;
+  border: none;
+}
+
+#paperUploadButton{
+  width: 70%;
+}
+
+#uploadBtnDiv label{
+  font-size: 105%;
+}
+
+.contact-title .title{
+  font-size: 190%;
+}
+
+@media screen and (max-width: 1170px){
+  .contactUs-form button{
+    padding: 11px 24px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .contactUs-form button{
+    padding: 8px 20px;
+  }
+  svg{
+    height: 19rem;
+  }
+}
+
+@media screen and (max-width: 910px){
+  svg{
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 830px){
+  .contactUs-form button{
+    padding: 7px 19px;
+  }
+  svg{
+    height: 17rem;
+  }
+  .contact-inputs{
+    height: 2.5rem;
+  }
+  .contactUs-form textarea{
+    height: 125px;
+  }
+  .contact-inputs::placeholder{
+    font-size: 17px;
+  }
+  #paperUploadButton{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 780px){
+  svg{
+    height: 16rem;
+  }
+}
+
+@media screen and (max-width: 730px){
+  svg{
+    height: 15rem;
+  }
+  .uploadMsg{
+    font-size: 95%;
+  }
+  #uploadBtnDiv label{
+    font-size: 95%;
+  }
+  .contact-title .title{
+    font-size: 180%;
+  }
+}
+@media screen and (max-width: 700px){
+  svg{
+    height: 14rem;
+  }
+  .uploadMsg{
+    font-size: 92%;
+  }
+  #uploadBtnDiv label{
+    font-size: 92%;
+  }
+  .contact-title .title{
+    font-size: 170%;
+  }
+  .contact-inputs{
+    height: 2.4rem;
+  }
+  .contactUs-form textarea{
+    height: 112px;
+  }
+  .contact-inputs::placeholder{
+    font-size: 16.5px;
+  }
+  #paperUploadButton{
+    width: 60%;
+  }
+  .contactUs-form{
+    gap: 1.2rem;
+  }
+}
+@media screen and (max-width: 650px){
+  svg{
+    height: 13rem;
+  }
+  .contact-title .title{
+    font-size: 160%;
+  }
+}
+@media screen and (max-width: 600px){
+  svg{
+    height: 12.3rem;
+  }
+  .contact-title .title{
+    font-size: 160%;
+  }
+  .contactUs-form{
+    gap: 0.9rem;
+  }
+  .contactUs-form textarea{
+    height: 98px;
+  }
+}
+@media screen and (max-width: 570px){
+  svg{
+    height: 11.6rem;
+  }
+  .contact-title .title{
+    font-size: 156%;
+  }
+  .contactUs-form{
+    gap: 0.85rem;
+  }
+  .contact-inputs{
+    height: 2rem;
+  }
+  .contact-inputs::placeholder{
+    font-size: 14.5px;
+  }
+  .contactUs-form button{
+    padding: 4.5px 17px;
+  }  
+}
+@media screen and (max-width: 540px){
+  svg{
+    height: 10.8rem;
+  }
+  .contact-title .title{
+    font-size: 150%;
+  }
+  .contactUs-form{
+    gap: 0.85rem;
+  }
+  .contact-inputs{
+    height: 2rem;
+  }
+  .contact-inputs::placeholder{
+    font-size: 14.5px;
+  }
+  .contactUs-form button{
+    padding: 4.5px 17px;
+  }
+}
+@media screen and (max-width: 500px){
+  svg{
+    height: 10.4rem;
+  }
+  .contact-title .title{
+    font-size: 150%;
+  }
+  .contactUs-form{
+    gap: 0.85rem;
+  }
+  .contact-inputs{
+    height: 2rem;
+  }
+  .contact-inputs::placeholder{
+    font-size: 14.5px;
+  }
+  .contactUs-form button{
+    padding: 4.5px 17px;
+  }
+  .uploadRightHalf{
+    width: 47%;
+    margin-left: 1.2%;
+    margin-right: 1%;
+  }
+}

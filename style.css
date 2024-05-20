@@ -13,7 +13,7 @@ html{
   scrollbar-width: thin;
 }
 body{
-  background-image: url(./images/background/7.png)
+  background-image: url(./images/background/7.png);
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -607,7 +607,7 @@ to {
 .container1{
   height: 100vh;
 }
-.container, .container1{
+.container, .container1, .containerUp{
   /* height: 100vh; */
   text-align: center;
   z-index: -1;
@@ -619,12 +619,15 @@ to {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.containerUp{
+  padding-top: -2%;
+}
+
 .container h1{
   padding-top: 5.5%;
 }
-#school_cont{
-  margin-top: 0%;
-}
+
 @media screen and (max-width:1240px) {
   .container{
     padding-top: 7%;
@@ -671,6 +674,16 @@ to {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#subject_cont{
+  margin-bottom: -1%;
+}
+
+#school_cont{
+  margin-top: 0%;
+  margin-bottom: -1%;
+  height: auto;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
