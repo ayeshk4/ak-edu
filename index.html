@@ -706,7 +706,7 @@
          -------------------------------------------------------------
          ------------------------------------------------------------>
                <div class="uploadRightHalf">
-                  <form action="https://api.web3forms.com/submit" method="POST" class="contactUs-form">
+                  <form action="https://api.web3forms.com/submit" method="POST" class="contactUs-form" id="fileUploadForm">
                      <div class="contact-title">
                         <h1 class="title text-center mb-4">What's on your mind ?</h1>
                      </div>
@@ -714,11 +714,15 @@
                      <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
                      <input type="email" name="email" placeholder="E-mail" class="contact-inputs" required>
                      <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
+                     <!-- <input type="file" name="attachment" class="contact-inputs" id="choose-file-btn"> -->
                      <button type="submit" class="btn btn-primary">Send Message</button>
                   </form>
-                  <div id="uploadBtnDiv">
-                     <label>Upload Papers :&nbsp;</label><button type="submit" class="btn btn-upload" id="paperUploadButton">Upload</button>
-                  </div>
+                  <form action="mailto:sigfaiofficial@gmail.com" method="GET">
+                     <div id="uploadBtnDiv">
+                        <label>Upload Papers :&nbsp;</label><button type="submit" class="btn btn-upload" id="paperUploadButton">Upload</button>
+                     </div>
+                  </form>
+                  
                </div>
 
                <!--
