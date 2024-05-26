@@ -13,7 +13,7 @@ html{
   scrollbar-width: thin;
 }
 body{
-  background-image: url(./images/background/7.png);
+  background-image: url(./images/background/7.webp);
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -670,7 +670,7 @@ to {
 }
 
 #index_image{
-  background-image: url(./images/index_bg_image5.png);
+  background-image: url(./images/index_bg_image5.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
